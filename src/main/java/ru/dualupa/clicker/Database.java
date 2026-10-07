@@ -13,6 +13,12 @@ public class Database {
     public Database(DuaLupaClicker plugin) { this.plugin = plugin; }
 
     public void connect() throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new SQLException("Драйвер PostgreSQL не найден", e);
+        }
+
         String host = plugin.getConfig().getString("database.host", "127.0.0.1");
         int port = plugin.getConfig().getInt("database.port", 5432);
         String name = plugin.getConfig().getString("database.name", "dualupa");
