@@ -1,0 +1,18 @@
+name: DuaLupaClicker
+version: 1.0.0
+main: ru.dualupa.clicker.DuaLupaClicker
+api-version: '1.21'
+author: DUA LUPA
+description: Clicker mini-game for DUA LUPA
+
+commands:
+  clicker:
+    description: Open clicker
+    aliases: [mine]
+  cadmin:
+    description: Admin commands
+    permission: dualupa.clicker.admin
+
+permissions:
+  dualupa.clicker.admin:
+    default: op
