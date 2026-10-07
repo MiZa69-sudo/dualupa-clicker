@@ -1,0 +1,6 @@
+database:
+  host: 127.0.0.1
+  port: 5432
+  name: dualupa
+  user: dualupa
+  password: "ЗАМЕНИ_НА_ПАРОЛЬ_ИЗ_ENV"
